@@ -21,16 +21,12 @@ function handlesubmit(e){
         email: email,
         age: age,
     };
-
     resultUIView.innerHTML = `<li>First Name =>  ${firstName}</li>
     <li>Last Name => ${lastName}</li>
     <li>Email => ${email}</li>
-    <li>Age  => ${age}</li>`;
-
-        
+    <li>Age  => ${age}</li>`;        
     console.log(formData); // Log the form data to the console
         alert(`Thank you for signing up, ${firstName} ${lastName}!\nEmail: ${email}\nAge: ${age}`);
-
 }
 form.addEventListener('submit', handlesubmit); // Attach the event listener to the form submit event
     
